@@ -1,0 +1,259 @@
+@font-face {
+  font-family: Gilory;
+  src: url(../fonts/Gilroy-Medium.ttf);
+}
+
+:root {
+  --main-bg-color: #e3edf7;
+  --light-blue-color: #ebf3fa;
+  --grey-blue-color: #31456a;
+  --red-button-color: #e51a1a;
+}
+body {
+  /* background-color: var(--main-bg-color); */
+}
+
+p {
+  font-family: "Gilory", sans-serif;
+  font-size: 14px;
+  opacity: 0.7;
+}
+h3 {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+  margin: 0;
+  margin-bottom: 80px;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  color: var(--grey-blue-color);
+}
+.container {
+  max-width: 1249px;
+  margin: 0 auto;
+}
+.text_shadow {
+  text-shadow: 0 3px 3px rgba(0, 0, 0);
+}
+.button_shadow {
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+}
+.button1 {
+  font-family: "Gilory", sans-serif;
+  border-radius: 8px;
+  border: none;
+  color: var(--grey-blue-color);
+  background-color: var(--light-blue-color);
+  padding: 9px;
+  width: 32px;
+  opacity: 0.7;
+  height: 32px;
+  margin-right: 12px;
+  /* box-shadow: 1px 5px 6px rgb(0 0 0 / 50%); */
+  background: linear-gradient(0deg, #e3edf7, #e3edf7);
+  /* kvadratura */
+
+  box-shadow: -4px -2px 8px rgba(255, 255, 255, 0.8),
+    4px 2px 8px rgba(136, 165, 191, 0.48);
+  border-radius: 8px;
+}
+.button2 {
+  font-family: "Gilory", sans-serif;
+  border-radius: 8px;
+  border: none;
+
+  color: var(--grey-blue-color);
+  background-color: var(--light-blue-color);
+  padding: 9px;
+
+  opacity: 0.7;
+
+  margin-right: 9px;
+  margin-bottom: 9px;
+  flex: 30%;
+
+  box-shadow: 1px 5px 6px rgb(0 0 0 / 50%);
+  background: linear-gradient(0deg, #e3edf7, #e3edf7);
+  /* kvadratura */
+
+  box-shadow: -4px -2px 8px rgba(255, 255, 255, 0.8),
+    4px 2px 8px rgba(136, 165, 191, 0.48);
+  border-radius: 8px;
+}
+.button2:active {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.plan_content {
+  display: flex;
+}
+.room_buttons {
+  display: flex;
+  flex-flow: wrap;
+}
+.flex_30 {
+  flex: 30%;
+}
+.flat_information {
+  justify-content: space-between;
+  background: linear-gradient(0deg, #ebf3fa, #ebf3fa),
+    linear-gradient(210.55deg, #ebf2f9 19.14%, #d9e6f3 154.68%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 24px;
+  padding: 41px 48px;
+  flex: 2;
+}
+.flat_information {
+  display: flex;
+}
+.second_filter p img {
+  margin-right: 15px;
+}
+.flat_informaiton {
+  flex: 2;
+}
+.plan_filter {
+  flex: 1;
+  margin-right: 20px;
+}
+.information_title {
+  width: 32px;
+  height: 16px;
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 100%;
+  align-items: center;
+  color: var(--grey-blue-color);
+  opacity: 0.6;
+  transition: 1;
+}
+.information_title:hover {
+  opacity: 1;
+}
+.information_description {
+  font-family: "Gilory", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 100%;
+}
+.second_filter {
+  padding-top: 22px;
+  margin-top: 64px;
+}
+.flat_informaiton_content {
+  margin-right: 40px;
+}
+.modal {
+  margin-top: 40px;
+}
+.modal_button_text {
+  font-family: "Gilory", sans-serif;
+
+  font-size: 18px;
+  line-height: 120%;
+}
+.filter_line {
+  height: 1px;
+  width: 136px;
+  background-color: var(--grey-blue-color);
+  opacity: 0.2;
+}
+
+.phone_modal {
+  border: none;
+  background-color: var(--red-button-color);
+  color: #fff;
+  border-radius: 38px;
+  font-family: "Gilory", sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.16em;
+  padding: 12px 19px;
+}
+.switchD {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.switch {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.big_plan {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.download_plan {
+  display: flex;
+  justify-content: flex-end;
+}
+.plan_button {
+  background: linear-gradient(0deg, #e3edf7, #e3edf7);
+  font-family: "Gilory", sans-serif;
+  color: var(--grey-blue-color);
+  font-size: 9px;
+  padding: 8px 16px;
+  border: none;
+  letter-spacing: 0.16em;
+  text-transform: lowercase;
+  box-shadow: -4px -2px 8px rgba(255, 255, 255, 0.8),
+    4px 2px 8px rgba(136, 165, 191, 0.48);
+  border-radius: 8px;
+}
+
+.plan_filter_radiobutton span div {
+  width: 19px;
+  height: 19px;
+  background: linear-gradient(87.87deg, #ffffff 3.58%, #587ca5 305.99%);
+  box-shadow: -2px -1px 4px rgba(255, 255, 255, 0.4),
+    2px 1px 3px rgba(24, 55, 91, 0.2),
+    inset 3px 3px 5px rgba(213, 230, 245, 0.4),
+    inset -4px -3px 4px rgba(79, 98, 120, 0.2);
+  border-radius: 26px;
+  border: none;
+  margin-right: 12px;
+}
+.plan_filter_radiobutton span {
+  display: flex;
+  margin-bottom: 14px;
+
+  padding-right: 20px;
+  font-family: "Gilory", sans-serif;
+  color: var(--grey-blue-color);
+}
+.plan_filter_radiobutton {
+  padding-top: 46px;
+
+  flex-wrap: wrap;
+  display: flex;
+}
+
+#check.active,
+#check1.active,
+#check2.active {
+  background: linear-gradient(106.79deg, #ffffff -62.32%, #587ca5 190.73%);
+  box-shadow: inset 3px 3px 5px rgba(213, 230, 245, 0.4),
+    inset 2px 2px 3px rgba(79, 98, 120, 0.9);
+  border-radius: 26px;
+  transform: rotate(-180deg);
+}
+#А_5k_226.active,
+#B_5k_168.active,
+#D_5k_254.active {
+  fill: salmon;
+}
+
+.twoLvl {
+  fill: salmon;
+}
+.withGround {
+  fill: springgreen;
+}
+.withT {
+  fill: steelblue;
+}
